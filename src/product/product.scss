@@ -1,0 +1,25 @@
+#image-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px 0;
+    img {
+        width: 50%;
+        border-radius: 50%;
+    }
+}
+#profile-box {
+    padding: 16px;
+    margin-top: 10px;
+    li {
+        line-height: 40px;
+        border-bottom: 1px solid #ccc;
+        div{
+            display: flex;
+            align-items: center;
+            img {
+                width: 70px;
+            }
+        }
+    }
+}
