@@ -16,4 +16,6 @@ const useAsync = (callback, deps = [], skip=false )=>{
         fetchData();
         // eslint-disable-next-line
     },deps)
+    return [ data, fetchData];
+
 }

@@ -8,7 +8,10 @@ async function getItems(){
     const response = await axios.get('localhost:3000/products');
     return response.data;
 }
-
+const ProductsCostomHook = ()=>{
+    
+    
+}
 
 const MainPageContext = () => {
 
