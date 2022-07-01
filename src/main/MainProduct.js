@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const ProductList = ({name, price, imgsrc,seller}) => {
+const MainProduct = ({id, name, price, imgsrc,seller}) => {
     return (
         <>
             <div className='product-card'>
+                <Link to={`/product/${id}`}>
                 <div className='product-image'>
                     <img src={imgsrc} alt='' />
                 </div>
@@ -15,9 +17,10 @@ const ProductList = ({name, price, imgsrc,seller}) => {
                         {seller}
                     </div>
                 </div>
+                </Link>
             </div>
         </>
     );
 };
 
-export default ProductList;
+export default MainProduct;
