@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.scss';
 import axios from 'axios';
-import useAsync from './useAsync';
+import useAsync from '../comtomHook/useAsync';
 import MainProduct2 from './MainProduct2';
 
 //주소를 여기서 불러주는 이유는 각 페이지마다 불러올 값이 다를 수 있기 때문(불러올 값이 다를 때마다 새로운 주소만 넣어주면 되니까)
@@ -37,6 +37,7 @@ const ProductsCostomHook = ()=>{
                                 price={product.price}
                                 imgsrc={product.imageUrl}
                                 seller={product.seller}
+                                description={product.description}
                             />
                         )}
                     </div>
