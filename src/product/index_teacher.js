@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import { API_URL } from '../config/contansts';
 
 async function getProduct(id){
-    const response = await axios.get(`http://localhost:3000/product/${id}`);
+    const response = await axios.get(`${ API_URL}/product/${id}`);
     return response.data
 }
 
