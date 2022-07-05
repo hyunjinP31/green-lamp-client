@@ -72,11 +72,11 @@ const UploadPage = () => {
         }).then(result=>{
             console.log(result);
             //submit하면 메인으로 돌아감.
-            navigate(`/`);
         })
         .catch(e=>{
             console.log(e);
         })
+        navigate(`/`);
     }
     return (
         <div id='upload-container' className='inner'>
