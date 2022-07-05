@@ -1,1 +1,1 @@
-export const API_URL = 'https://lamp--server.herokuapp.com' ;
+export const API_URL = 'https://lamp-server-retry.herokuapp.com/' ;
